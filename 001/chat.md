@@ -191,3 +191,46 @@ GitHubにリポジトリを作成して、ファイルを保存する手順を�
 - `<a>`タグ: 連絡先としてのTwitterアカウントとメールアドレスへのリンク
 
 これで、自己紹介コンテンツの追加が完了しました。次のステップは、CSSを使ってデザインを整えることです。`<style>`タグを`<head>`タグ内に追加し、CSSを記述してください。フォントや色、マージンやパディングなどを調整して、デザインをより魅力的にしてみましょう。
+
+## USER
+
+styleを追加してみましたが、いまいち上手なstylingができません。何かコツはあるでしょうか。
+
+```html
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8">
+    <title>my web page</title>
+    <style>
+      h1 {
+        color: cornflowerblue;
+        padding: 10px;
+      }
+      h2 {
+        color: darkcyan;
+        padding: 10px;
+      }
+      p {
+        padding: 0 0 0 30px;
+      }
+      a {
+        padding: 0 0 0 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>my prof</h1>
+    <p>this is my page</p>
+    <h2>favorite movie</h2>
+    <ul>
+      <li>ムカデ人間</li>
+      <li>シャークネード</li>
+      <li>サウスパーク</li>
+    </ul>
+    <h2>連絡先</h2>
+      <a href="https://twitter.com/enven_omiomi">Twitter</a>
+      <a href="mailto:example@example.com">Email</a>
+  </body>
+</html>
+```
