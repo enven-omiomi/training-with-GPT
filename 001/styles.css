@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  color: cornflowerblue;
+  padding: 10px;
+}
+h2 {
+  color: darkcyan;
+  padding: 10px;
+}
+p {
+  padding: 0 0 0 30px;
+}
+ul {
+  padding-left: 60px;
+}
+a {
+  padding: 0 0 0 30px;
+  color: darkcyan;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

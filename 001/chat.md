@@ -309,3 +309,75 @@ styleを追加してみましたが、いまいち上手なstylingができま�
 さらに、デザインのインスピレーションを得るために、ウェブデザインのギャラリーサイト（例：[Awwwards](https://www.awwwards.com/) や [Dribbble](https://dribbble.com/)）を参照してみてください。他のデザイン作品を見ることで、新しいアイデアやスタイリングの方法を学ぶことができます。
 
 最後に、ウェブデザインやCSSに関する知識を深めるために、オンラインコースやチュートリアルを利用することをお勧めします。[MDN Web Docs](https://developer.mozilla.org/ja/) や [W3Schools](https://www.w3schools.com/) などのリソースを活用して、スキルを磨いていくことができます。
+
+## USER
+
+ありがとう。
+ちなみに
+styleを別ファイルに書き出すことはできますか？
+
+## ASSISTANT
+
+はい、スタイルを別ファイルに書き出すことができます。その場合、別ファイルにCSSを記述し、HTMLファイルでそのCSSファイルをリンクする方法を使います。以下に手順を示します。
+
+1. CSSファイルを作成します。例えば、`styles.css`という名前でファイルを作成し、先ほどのスタイルをその中に記述します。
+
+   `styles.css`:
+   ```css
+   body {
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+   }
+   h1 {
+     color: cornflowerblue;
+     padding: 10px;
+   }
+   h2 {
+     color: darkcyan;
+     padding: 10px;
+   }
+   p {
+     padding: 0 0 0 30px;
+   }
+   ul {
+     padding-left: 60px;
+   }
+   a {
+     padding: 0 0 0 30px;
+     color: darkcyan;
+     text-decoration: none;
+   }
+   a:hover {
+     text-decoration: underline;
+   }
+   ```
+
+2. HTMLファイルで、`<head>`タグ内に`<link>`タグを追加して、CSSファイルをリンクします。
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="ja-JP">
+     <head>
+       <meta charset="utf-8">
+       <title>my web page</title>
+       <link rel="stylesheet" href="styles.css">
+     </head>
+     <body>
+       <h1>my prof</h1>
+       <p>this is my page</p>
+       <h2>favorite movie</h2>
+       <ul>
+         <li>ムカデ人間</li>
+         <li>シャークネード</li>
+         <li>サウスパーク</li>
+       </ul>
+       <h2>連絡先</h2>
+         <a href="https://twitter.com/enven_omiomi">Twitter</a>
+         <a href="mailto:example@example.com">Email</a>
+     </body>
+   </html>
+   ```
+
+   `<link>`タグの`href`属性には、CSSファイルへのパスを指定します。
+
+これで、HTMLファイルとCSSファイルが分離され、コードが整理されます。別ファイルにCSSを書き出す利点は、複数のHTMLファイルで同じCSSファイルを再利用できること、また、HTMLとCSSが分離されることでコードが読みやすくなることです。
