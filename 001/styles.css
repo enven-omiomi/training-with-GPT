@@ -5,6 +5,12 @@ body {
 h1 {
   color: cornflowerblue;
   padding: 10px;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
 }
 h2 {
   color: darkcyan;
@@ -23,4 +29,39 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+/* ナビゲーションバー */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 画像ギャラリー */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.gallery-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
